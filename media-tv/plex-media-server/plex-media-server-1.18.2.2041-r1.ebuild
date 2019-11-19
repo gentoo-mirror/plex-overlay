@@ -4,9 +4,9 @@
 EAPI=7
 
 PYTHON_COMPAT=( python2_7 )
-inherit eutils user systemd unpacker pax-utils python-single-r1
+inherit eutils systemd unpacker pax-utils python-single-r1
 
-COMMIT="c186313fe"
+COMMIT="3d469cb32"
 
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
@@ -35,6 +35,8 @@ DEPEND="
 	dev-python/virtualenv[${PYTHON_USEDEP}]"
 
 RDEPEND="
+	acct-user/plex
+	acct-group/plex
 	avahi? ( net-dns/avahi )
 	system-openssl? ( dev-libs/openssl:0 )
 	${PYTHON_DEPS}"
@@ -61,8 +63,6 @@ PATCHES=(
 )
 
 pkg_setup() {
-	enewgroup ${_USERNAME}
-	enewuser ${_USERNAME} -1 /bin/bash /var/lib/${_APPNAME} "${_USERNAME},video"
 	python-single-r1_pkg_setup
 }
 
