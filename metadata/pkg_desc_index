@@ -1,6 +1,6 @@
 acct-group/plex 0: A group for users with access to system-wide Plex services
 acct-user/plex 0: System-wide Plex services user
 media-tv/plex-media-player 2.42.0.1013 2.44.0.1018 2.45.0.1028 2.46.0.1031 2.47.0.1035: Next generation Plex Desktop/Embedded Client
-media-tv/plex-media-server 1.18.2.2041-r2 1.18.2.2058 1.18.3.2111 1.18.3.2129 1.18.4.2164: A free media library that is intended for use with a plex client.
+media-tv/plex-media-server 1.18.2.2041-r2 1.18.2.2058 1.18.3.2111 1.18.3.2129 1.18.4.2164 1.18.4.2171: A free media library that is intended for use with a plex client.
 media-tv/tautulli 2.1.37: A python based web application for monitoring your Plex Media Server.
 sys-apps/fix-gnustack 0.1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
