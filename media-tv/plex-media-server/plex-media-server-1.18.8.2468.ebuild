@@ -1,11 +1,11 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 inherit eutils systemd unpacker pax-utils
 
-COMMIT="f342a5a43"
+COMMIT="5d395aa9d"
 
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
