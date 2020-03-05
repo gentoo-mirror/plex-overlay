@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -9,10 +9,10 @@ DESCRIPTION="Next generation Plex Desktop/Embedded Client"
 HOMEPAGE="http://plex.tv/"
 
 # To change on every release bump:
-COMMIT="6dc7c723"
-WEB_CLIENT_BUILD_ID="156-e1595151b12c68"
-WEB_CLIENT_DESKTOP_VERSION="3.104.2-1b12c68"
-WEB_CLIENT_TV_VERSION="4.15.0-e159515"
+COMMIT="86a2dc81"
+WEB_CLIENT_BUILD_ID="172-17d1db2564f6ac"
+WEB_CLIENT_DESKTOP_VERSION="4.27.0-564f6ac"
+WEB_CLIENT_TV_VERSION="4.27.1-17d1db2"
 
 MY_PV="${PV}-${COMMIT}"
 MY_P="${PN}-${MY_PV}"
@@ -79,6 +79,7 @@ PATCHES=(
 	"${FILESDIR}/git-revision.patch"
 	"${FILESDIR}/dont_copy_qtwebengine_devtools_resources_pak_file.patch"
 	"${FILESDIR}/dont_start_as_fullscreen_tv_by_default.patch"
+	"${FILESDIR}/fix_qpair_usage.patch"
 )
 
 S="${WORKDIR}/${MY_P}"
