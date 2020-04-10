@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python2_7 )
 inherit eutils systemd unpacker pax-utils python-single-r1
 
-MINOR_VERSION="2571-e106a8a91"
+MINOR_VERSION="2645-ccb6eb67e"
 
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
@@ -53,8 +53,6 @@ BINS_TO_PAX_MARK=(
 
 S="${WORKDIR}"
 PATCHES=(
-	"${FILESDIR}/virtualenv_start_pms.2020.patch"
-	"${FILESDIR}/add_gentoo_profile_as_platform_version.patch"
 	"${FILESDIR}/plexmediamanager.desktop.new.patch"
 	"${FILESDIR}/plexmediaserver.service.patch"
 )
@@ -103,6 +101,10 @@ src_install() {
 	for f in "${BINS_TO_PAX_MARK[@]}"; do
 		pax-mark m "${f}"
 	done
+
+	# Install start_pms script
+	into /usr
+	dosbin "${FILESDIR}/start_pms"
 
 	einfo "Configuring virtualenv"
 	virtualenv -v --no-pip --no-setuptools --no-wheel "${ED}"/usr/lib/plexmediaserver/Resources/Python || die
