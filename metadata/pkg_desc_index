@@ -1,5 +1,5 @@
 acct-user/plex 1: Plex Media Server user
 media-tv/plex-media-player 2.52.2.1056-r1 2.53.0.1063-r1 2.54.0.1067 2.55.0.1069 2.56.0.1071: Next generation Plex Desktop/Embedded Client
-media-tv/plex-media-server 1.19.1-r4 1.19.2-r1 1.19.2-r2 1.19.2-r3: A free media library that is intended for use with a plex client
+media-tv/plex-media-server 1.19.1-r4 1.19.2-r1 1.19.2-r2 1.19.2-r3 1.19.3: A free media library that is intended for use with a plex client
 media-tv/tautulli 2.1.44 2.2.1: A python based web application for monitoring your Plex Media Server.
 sys-apps/fix-gnustack 0.1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
