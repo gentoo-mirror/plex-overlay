@@ -4,6 +4,7 @@ DEPEND=>=dev-qt/qtcore-5.11.2 >=dev-qt/qtnetwork-5.11.2 >=dev-qt/qtxml-5.11.2 >=
 DESCRIPTION=Next generation Plex Desktop/Embedded Client
 EAPI=7
 HOMEPAGE=http://plex.tv/
+INHERIT=desktop eutils xdg cmake-utils
 IUSE=cec +desktop download joystick lirc
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2 Plex
@@ -11,5 +12,5 @@ RDEPEND=>=dev-qt/qtcore-5.11.2 >=dev-qt/qtnetwork-5.11.2 >=dev-qt/qtxml-5.11.2 >
 RESTRICT=mirror download? ( network-sandbox )
 SLOT=0
 SRC_URI=https://github.com/plexinc/plex-media-player/archive/v2.57.0.1074-f7d709d1.tar.gz -> plex-media-player-2.57.0.1074.tar.gz !download? ( https://artifacts.plex.tv/web-client-pmp/182-13c4ebbe50e175/buildid.cmake -> buildid-182-13c4ebbe50e175.cmake https://artifacts.plex.tv/web-client-pmp/182-13c4ebbe50e175/web-client-tv-4.29.5-13c4ebb.tar.xz desktop? ( https://artifacts.plex.tv/web-client-pmp/182-13c4ebbe50e175/web-client-desktop-4.29.2-e50e175.tar.xz ) )
-_eclasses_=cmake-utils	77cd39e6009811bf97a59d91ffd5b54f	desktop	c0d27bf73aa08ca05b663dbd31fbef28	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	edos2unix	33e347e171066657f91f8b0c72ec8773	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	2d5b3f4b315094768576b6799e4f926e	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	cmake-utils	b9d98d57da01a3e48e748e46650335ed
 _md5_=98af1875b26dc99a1c503f80270af44b
