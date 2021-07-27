@@ -6,3 +6,6 @@ media-tv/plex-media-player 2.57.0.1074 2.57.0.1074-r1: Next generation Plex Desk
 media-tv/plex-media-server 1.23.5.4862 1.23.6.4810 1.23.6.4863: A free media library that is intended for use with a plex client
 media-tv/tautulli 2.6.6 2.6.8 2.6.9 2.6.10 2.7.0 2.7.1: A python based web application for monitoring your Plex Media Server.
 sys-apps/fix-gnustack 0.1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
+sys-firmware/firmware-si2168-b40 4.0.11-r1 4.0.19-r1 4.0.25-r1: Firmware for Silicon Labs Si2168(b40) DVB-T/T2/C demodulator driver
+sys-firmware/firmware-si2168-d60 6.0.1-r1: Firmware for Silicon Labs Si2168(d60) DVB-T/T2/C demodulator driver
+sys-firmware/linux-firmware-hauppauge 0.1.7: Firmware for Hauppauge and WinTV tuners

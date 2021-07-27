@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Firmware for Silicon Labs Si2168(b40) DVB-T/T2/C demodulator driver
+EAPI=8
+HOMEPAGE=http://palosaari.fi/linux/
+KEYWORDS=~amd64 ~x86
+LICENSE=Hauppauge-Firmware
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://palosaari.fi/linux/v4l-dvb/firmware/Si2168/Si2168-B40/4.0.11/dvb-demod-si2168-b40-01.fw -> dvb-demod-si2168-b40-01.fw-4.0.11
+_md5_=76f4c4a15cd91c0006ce9351849e6076
