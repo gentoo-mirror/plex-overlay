@@ -5,7 +5,7 @@ EAPI=8
 
 inherit readme.gentoo-r1 systemd unpacker pax-utils
 
-COMMIT="adb79ff3b"
+COMMIT="f954ae495"
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
 _SHORTNAME="${_USERNAME}"
@@ -22,7 +22,7 @@ S="${WORKDIR}"
 
 LICENSE="Plex"
 SLOT="0"
-KEYWORDS="-* amd64 x86"
+KEYWORDS="-* ~amd64 ~x86"
 RESTRICT="mirror bindist"
 
 DEPEND="
@@ -47,9 +47,6 @@ BINS_TO_PAX_MARK=(
 )
 
 src_install() {
-	# Remove Debian apt repo files
-	rm -r "etc/apt" || die
-
 	# Remove Debian specific files
 	rm -r "usr/share/doc" || die
 
