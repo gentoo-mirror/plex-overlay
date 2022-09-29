@@ -5,7 +5,7 @@ EAPI=8
 
 inherit readme.gentoo-r1 systemd unpacker pax-utils
 
-COMMIT="b1b4d4871"
+COMMIT="819d3678c"
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
 _SHORTNAME="${_USERNAME}"
@@ -22,7 +22,7 @@ S="${WORKDIR}"
 
 LICENSE="Plex"
 SLOT="0"
-KEYWORDS="-* ~amd64 ~x86"
+KEYWORDS="-* amd64 x86"
 RESTRICT="mirror bindist"
 
 DEPEND="
