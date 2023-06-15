@@ -1,6 +1,6 @@
 acct-group/tautulli 0: Tautulli group
 acct-user/tautulli 0: Tautulli user
-media-tv/plex-media-server 1.32.2.7100 1.32.3.7089 1.32.3.7162 1.32.4.7164: Free media library that is intended for use with a plex client
+media-tv/plex-media-server 1.32.2.7100 1.32.3.7089 1.32.3.7162 1.32.3.7192 1.32.4.7164 1.32.4.7195: Free media library that is intended for use with a plex client
 media-tv/tautulli 2.12.3: A python based web application for monitoring your Plex Media Server.
 sys-firmware/firmware-si2168-b40 4.0.11-r1 4.0.19-r1 4.0.25-r1: Firmware for Silicon Labs Si2168(b40) DVB-T/T2/C demodulator driver
 sys-firmware/firmware-si2168-d60 6.0.1-r1: Firmware for Silicon Labs Si2168(d60) DVB-T/T2/C demodulator driver
