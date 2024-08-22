@@ -5,7 +5,7 @@ EAPI=8
 
 inherit readme.gentoo-r1 systemd unpacker pax-utils
 
-MY_PV="${PV}-e5987a19d"
+MY_PV="${PV}-1bd569c5f"
 MY_URI="https://downloads.plex.tv/plex-media-server-new"
 
 DESCRIPTION="Free media library that is intended for use with a plex client"
@@ -20,7 +20,7 @@ S="${WORKDIR}"
 
 LICENSE="Plex"
 SLOT="0"
-KEYWORDS="-* amd64 arm arm64 x86"
+KEYWORDS="-* ~amd64 ~arm ~arm64 ~x86"
 RESTRICT="mirror bindist"
 
 DEPEND="
