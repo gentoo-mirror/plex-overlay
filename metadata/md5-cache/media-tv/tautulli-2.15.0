@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst setup
+DEPEND=python_single_target_python3_10? ( dev-lang/python:3.10[sqlite(+)] ) python_single_target_python3_11? ( dev-lang/python:3.11[sqlite(+)] )
+DESCRIPTION=A python based web application for monitoring your Plex Media Server.
+EAPI=8
+HOMEPAGE=https://tautulli.com
+INHERIT=python-single-r1 systemd
+IUSE=python_single_target_python3_10 python_single_target_python3_11
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=acct-user/tautulli acct-group/tautulli media-tv/plex-media-server dev-python/pyopenssl python_single_target_python3_10? ( dev-lang/python:3.10[sqlite(+)] ) python_single_target_python3_11? ( dev-lang/python:3.11[sqlite(+)] )
+RESTRICT=bindist mirror strip test
+SLOT=0
+SRC_URI=https://github.com/Tautulli/Tautulli/archive/v2.15.0.tar.gz -> Tautulli-2.15.0.tar.gz
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	fa554cc3cff825d21dfe3f24841e29cf	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57	systemd	54bd206bb5c4efac6ae28b6b006713b0
+_md5_=87cd14a3817648d9f44990875ed54a6c
